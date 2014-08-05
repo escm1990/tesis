@@ -11,5 +11,7 @@ package com.tesis.administration.controller;
  * @author luis
  */
 public class TesisAdministrationUserController {
-    
+    public TesisAdministrationUserController() {
+        super();
+    }
 }
