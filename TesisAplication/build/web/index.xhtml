@@ -1,16 +1,22 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
     <h:head>
         <title>Facelet Title</title>
-         <script type="text/javascript" src="resources/Jquery/jquery-1.11.1.min"></script>
+        <h:outputScript name="jquery-1.11.1.min.js" library="Jquery" target="body" />
+        <h:outputScript name="index.js" library="Jquery" target="body" />
+        <h:outputScript name="bootstrap.min.js" library="Bootstrap/js" target="body" />
+        <h:outputStylesheet name="bootstrap.min.css" library="Bootstrap/css" />
     </h:head>
     <h:body>
-        
-        <input type="text" value="dato"></input>
-        Hello from Facelets
-        
-       
+        <h:form>
+            <h:inputText value="Campo de texto" id="campo"></h:inputText>
+            <h:commandButton value="Buscar" id="aceptar" ></h:commandButton>
+           
+            
+        </h:form>
+        <h:button value="Boton" id="buscar"></h:button>
     </h:body>
 </html>
 
